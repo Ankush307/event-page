@@ -60,13 +60,13 @@ const EventForm = () => {
                                 <img src={obj.url} alt="uploded img" className="w-full h-full object-cover" />
                             </div>
                         ))}
-                        <label className="w-24 h-20 border-2 border-dashed border-smokey-gray rounded-[20px] flex items-center justify-center cursor-pointer hover:bg-gray-200 transition-all ease-linear duration-200">
+                        <label className="w-24 h-20 border border-dashed border-neutral rounded-[20px] flex items-center justify-center cursor-pointer hover:bg-gray-200 transition-all ease-linear duration-200">
                             <input type="file" className="hidden" onChange={handleUpload} />
                             <AddIcon />
                         </label>
                     </div>
                     <div className="relative w-full">
-                        <div className="flex items-center cursor-pointer justify-between bg-white rounded-[30px] py-[17.5px] px-4"
+                        <div className="flex items-center cursor-pointer justify-between bg-white border-light-gray border rounded-[30px] py-[17.5px] px-4"
                             onClick={toggleDropdown}>
                             <p className="text-sm font-bold text-neutural leading-[21px]">{selectedOption}</p>
                             <p><DropIcon /></p>
@@ -102,7 +102,7 @@ const EventForm = () => {
                                 className='w-full border-light-gray font-bold border rounded-[15px] sm:rounded-[30px] text-sm text-smokey-gray outline-none py-[17.5px] px-4' placeholder='Preis' type="text" />
                         </div>
                     </div>
-                    <textarea required value={value.details} onChange={(e) => setValue({ ...value, details: e.target.value })} name="text" placeholder='Details zur Veranstaltung' className='p-4 placeholder:pt-[40px] bg-white text-smokey-gray text-sm font-bold w-full rounded-[15px] sm:rounded-[30px] resize-none outline-none min-h-[132px]'></textarea>
+                    <textarea required value={value.details} onChange={(e) => setValue({ ...value, details: e.target.value })} name="text" placeholder='Details zur Veranstaltung' className='p-4 border-light-gray border placeholder:pt-[40px] bg-white text-smokey-gray text-sm font-bold w-full rounded-[15px] sm:rounded-[30px] resize-none outline-none min-h-[132px]'></textarea>
                     <div className='w-full justify-center flex'>
                         <button type="submit" className='form-btn-bg font-bold hover:scale-105  transition-all duration-500 text-white py-4 sm:px-[115.5px] px-24 rounded-[15px] sm:rounded-[30px]'>Event einsendens</button>
                     </div>
