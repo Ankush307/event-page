@@ -1,3 +1,7 @@
 .form-btn-bg{
     background: linear-gradient(80.25deg, #0071BB 0.38%, #39A3E7 98.6%);
+    transition: all 400ms linear;
+}
+.form-btn-bg:hover{
+    background: linear-gradient(20.25deg, #39A3E7 98.6%, #0071BB 0.38% );
 }
