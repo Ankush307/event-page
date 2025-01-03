@@ -60,13 +60,13 @@ const EventForm = () => {
                                 <img src={obj.url} alt="uploded img" className="w-full h-full object-cover" />
                             </div>
                         ))}
-                        <label className="w-24 h-20 border border-dashed border-neutral rounded-[20px] flex items-center justify-center cursor-pointer hover:bg-gray-200 transition-all ease-linear duration-200">
+                        <label className="w-24 h-20 border border-dashed border-neutral rounded-[20px] flex items-center justify-center cursor-pointer hover:shadow-lg transition-all ease-linear duration-200">
                             <input type="file" className="hidden" onChange={handleUpload} />
                             <AddIcon />
                         </label>
                     </div>
                     <div className="relative w-full">
-                        <div className="flex items-center cursor-pointer justify-between bg-white border-light-gray border rounded-[30px] py-[17.5px] px-4"
+                        <div className="flex items-center cursor-pointer justify-between bg-white border-light-gray border-[0.5px] rounded-[30px] py-[17.5px] px-4"
                             onClick={toggleDropdown}>
                             <p className="text-sm font-bold text-neutural leading-[21px]">{selectedOption}</p>
                             <p><DropIcon /></p>
@@ -86,20 +86,20 @@ const EventForm = () => {
                     <div className="lg:flex w-full gap-4">
                         <div className='flex flex-col lg:w-1/2 max-lg:mb-4'>
                             <input required value={value.name} onChange={(e) => setValue({ ...value, name: e.target.value })}
-                                className='w-full text-sm font-bold border-light-gray border rounded-[15px] sm:rounded-[30px] text-smokey-gray outline-none py-[17.5px] px-4' placeholder='Titel' type="text" /></div>
+                                className='w-full text-sm font-bold border-light-gray border-[0.5px] rounded-[15px] sm:rounded-[30px] text-smokey-gray outline-none py-[17.5px] px-4' placeholder='Titel' type="text" /></div>
                         <div className='lg:w-1/2 flex flex-col'>
                             <input required value={value.email} onChange={(e) => setValue({ ...value, email: e.target.value })}
-                                className='w-full border-light-gray font-bold border rounded-[15px] sm:rounded-[30px] text-sm text-smokey-gray outline-none py-[17.5px] px-4' placeholder='Datum' type="text" />
+                                className='w-full border-light-gray font-bold border-[0.5px] rounded-[15px] sm:rounded-[30px] text-sm text-smokey-gray outline-none py-[17.5px] px-4' placeholder='Datum' type="text" />
                         </div>
                     </div>
                     <div className="lg:flex w-full gap-4">
                         <div className='flex flex-col lg:w-1/2 max-lg:mb-4'>
                             <input required value={value.standort} onChange={(e) => setValue({ ...value, standort: e.target.value })}
-                                className='w-full border-light-gray font-bold border rounded-[15px] sm:rounded-[30px] text-sm text-smokey-gray outline-none py-[17.5px] px-4' placeholder='Standort' type="text" />
+                                className='w-full border-light-gray font-bold border-[0.5px] rounded-[15px] sm:rounded-[30px] text-sm text-smokey-gray outline-none py-[17.5px] px-4' placeholder='Standort' type="text" />
                         </div>
                         <div className='lg:w-1/2 flex flex-col'>
                             <input required value={value.preis} onChange={(e) => setValue({ ...value, preis: e.target.value })}
-                                className='w-full border-light-gray font-bold border rounded-[15px] sm:rounded-[30px] text-sm text-smokey-gray outline-none py-[17.5px] px-4' placeholder='Preis' type="text" />
+                                className='w-full border-light-gray font-bold border-[0.5px] rounded-[15px] sm:rounded-[30px] text-sm text-smokey-gray outline-none py-[17.5px] px-4' placeholder='Preis' type="text" />
                         </div>
                     </div>
                     <textarea required value={value.details} onChange={(e) => setValue({ ...value, details: e.target.value })} name="text" placeholder='Details zur Veranstaltung' className='p-4 border-light-gray border placeholder:pt-[40px] bg-white text-smokey-gray text-sm font-bold w-full rounded-[15px] sm:rounded-[30px] resize-none outline-none min-h-[132px]'></textarea>

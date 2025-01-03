@@ -17,7 +17,7 @@ const NestedLoop = () => {
     const pattern = createPattern();
     return (
         <div className='flex items-center justify-center flex-col py-10'>
-            <h2 className='text-center text-xl font-bold text-neutural py-5'>Stars</h2>
+            <h2 className='text-center sm:text-3xl text-2xl font-bold text-neutural border-b-2 border-smokey-gray pb-1 mb-2'>Stars</h2>
             <p>
                 {pattern.map((row, i) => (
                     <div key={i}>{row.join(' ')}</div>

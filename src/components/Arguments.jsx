@@ -15,7 +15,7 @@ const Arguments = () => {
 
     return (
         <div className="flex items-center flex-col pt-10 pb-10 px-5">
-            <h2 className="text-center font-bold text-3xl text-mirage-dark border-b-2 border-smokey-gray pb-1 mb-2"> Add Value</h2>
+            <h2 className="text-center sm:text-3xl text-2xl font-bold text-mirage-dark border-b-2 border-smokey-gray pb-1 mb-2"> Add Value</h2>
             <form className="border rounded-lg shadow-lg bg-white p-6 flex flex-col w-full max-w-[768px] mt-8" onSubmit={submitHandler}>
                 <div className="md:flex items-center justify-center md:justify-between gap-4">
                     <input type="number" value={value1} onChange={(e) => setValue1(e.target.value)} className="flex-1 text-sm font-bold w-full outline-none border border-gray-300 rounded-lg p-4" placeholder="Enter first value" />
