@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Arguments = () => {
+const AddValue = () => {
     const [value1, setValue1] = useState('');
     const [value2, setValue2] = useState('');
     const [answer, setAnswer] = useState(0);
@@ -30,4 +30,4 @@ const Arguments = () => {
     );
 };
 
-export default Arguments;
+export default AddValue;
