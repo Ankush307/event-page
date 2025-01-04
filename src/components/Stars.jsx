@@ -1,6 +1,6 @@
 import React from 'react';
 
-const NestedLoop = () => {
+const Stars = () => {
     const xaxis = 7;
     const yaxis = 7;
     const createPattern = () => {
@@ -27,4 +27,4 @@ const NestedLoop = () => {
     );
 };
 
-export default NestedLoop;
+export default Stars;
