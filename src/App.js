@@ -1,5 +1,5 @@
 import './App.css';
-import Arguments from './components/Arguments';
+import AddValue from './components/AddValue';
 import EventForm from './components/EventForm';
 import NestedLoop from './components/NestedLoop';
 import Table from './components/Table';
@@ -10,7 +10,7 @@ function App() {
       <EventForm />
       <NestedLoop />
       <Table />
-      <Arguments />
+      <AddValue />
     </>
   );
 }
